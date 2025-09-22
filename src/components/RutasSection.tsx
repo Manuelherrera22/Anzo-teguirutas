@@ -63,11 +63,11 @@ const RutasSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-serif">
-            Nuestras Rutas
+            Rutas de la Vereda Palomar
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Descubre la diversidad de la Vereda Palomar a través de nuestras rutas especializadas, 
-            diseñadas para todos los niveles y intereses.
+            incluyendo el famoso kilómetro vertical y emocionantes rutas de biciturismo de montaña.
           </p>
         </div>
 

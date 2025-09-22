@@ -12,7 +12,7 @@ const TestimoniosSection: React.FC = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Descubre las experiencias reales de quienes han explorado la Vereda Palomar 
-            y se han enamorado de sus paisajes y aventuras.
+            y se han enamorado de sus paisajes, aventuras y rutas de biciturismo.
           </p>
         </div>
 

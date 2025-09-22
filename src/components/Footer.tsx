@@ -17,8 +17,8 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
-              Descubre la magia de la Vereda Palomar a través del ecoturismo, deportes de aventura 
-              y experiencias auténticas de turismo rural comunitario en el corazón de Anzoátegui.
+              Descubre la magia de la Vereda Palomar a través del ecoturismo, biciturismo de montaña, 
+              deportes de aventura y experiencias auténticas de turismo rural comunitario en Anzoátegui, Tolima.
             </p>
             <div className="flex space-x-4">
               {contacto.redesSociales.facebook && (

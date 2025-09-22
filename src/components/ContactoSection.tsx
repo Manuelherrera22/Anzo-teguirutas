@@ -56,7 +56,7 @@ const ContactoSection: React.FC = () => {
             Contacto
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            ¿Tienes preguntas o quieres reservar tu experiencia? 
+            ¿Tienes preguntas o quieres reservar tu experiencia en la Vereda Palomar? 
             Estamos aquí para ayudarte a planificar tu aventura perfecta.
           </p>
         </div>

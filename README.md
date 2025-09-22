@@ -1,23 +1,25 @@
-# Anzoátegui Rutas - Turismo Rural Comunitario
+# Vereda Palomar - Turismo Rural Comunitario
 
-Una plataforma web moderna para promover el turismo rural comunitario en la Vereda Palomar de Anzoátegui, Colombia. La aplicación destaca las actividades ecoturísticas, deportivas y culturales de la región.
+Una plataforma web moderna para promover el turismo rural comunitario en la Vereda Palomar de Anzoátegui, Tolima. La aplicación destaca las actividades ecoturísticas, deportivas y culturales de esta vereda única, incluyendo el famoso kilómetro vertical y emocionantes rutas de biciturismo de montaña.
 
 ## 🌟 Características Principales
 
-### 🏃‍♂️ Rutas Deportivas
+### 🏃‍♂️ Rutas Deportivas en Palomar
 - **Kilómetro Vertical Palomar**: El desafío más extremo con 1000m de elevación en solo 1km
 - **Trail Running Circuito**: Rutas técnicas para corredores de montaña
 - **Trekking Exploración**: Caminatas familiares por la biodiversidad local
+- **Biciturismo de Montaña**: Rutas emocionantes para ciclistas de todos los niveles
 
-### 🌿 Ecoturismo Especializado
+### 🌿 Ecoturismo Especializado en Palomar
 - **Ruta de Plantas Epífitas**: Observación de orquídeas, bromelias y musgos
 - **Aviturismo**: Más de 150 especies de aves para observar
 - **Fotografía de Naturaleza**: Talleres especializados con equipo profesional
 
-### 🏕️ Actividades Culturales
+### 🏕️ Actividades Culturales en Palomar
 - **Camping Nocturno**: Experiencia completa con cena típica y observación de estrellas
 - **Gastronomía Local**: Degustación de cocina campesina auténtica
 - **Talleres Educativos**: Aprendizaje sobre biodiversidad y conservación
+- **Tours Guiados en Bicicleta**: Exploración de la vereda sobre dos ruedas
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -74,11 +76,12 @@ npm run preview
 
 ## 🌍 Datos de la Vereda Palomar
 
-- **Ubicación**: Anzoátegui, Colombia
+- **Ubicación**: Anzoátegui, Tolima, Colombia
 - **Altitud**: 1,800 - 2,800 msnm
 - **Clima**: Templado de montaña (12°C - 22°C)
 - **Población**: 350 habitantes
 - **Biodiversidad**: 150+ especies de aves, 50+ especies de orquídeas
+- **Especialidad**: Kilómetro vertical, biciturismo de montaña, aviturismo, plantas epífitas
 
 ## 🎯 Objetivos del Proyecto
 
@@ -92,7 +95,7 @@ npm run preview
 
 - **Teléfono**: +57 300 123 4567
 - **Email**: info@anzoateguirutas.com
-- **Ubicación**: Vereda Palomar, Anzoátegui, Colombia
+- **Ubicación**: Vereda Palomar, Anzoátegui, Tolima, Colombia
 - **Redes Sociales**: Facebook, Instagram, WhatsApp
 
 ## 🚀 Deploy
@@ -105,6 +108,6 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detal
 
 ---
 
-**Desarrollado con ❤️ para la comunidad de la Vereda Palomar, Anzoátegui**
+**Desarrollado con ❤️ para la comunidad de la Vereda Palomar, Anzoátegui, Tolima**
 
 *Generado el 22/9/2025, 1:25:10 p. m.*

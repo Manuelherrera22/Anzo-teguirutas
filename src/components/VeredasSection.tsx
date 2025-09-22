@@ -26,11 +26,11 @@ const VeredasSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-serif">
-            Veredas de Anzoátegui
+            Otras Veredas de Anzoátegui
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Descubre las hermosas veredas de Anzoátegui, Tolima. Cada una con su propia 
-            personalidad, atractivos únicos y experiencias inolvidables.
+            Además de Palomar, Anzoátegui cuenta con otras hermosas veredas, cada una con su propia 
+            personalidad y atractivos únicos para explorar.
           </p>
         </div>
 

@@ -8,11 +8,12 @@ const VeredaSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-serif">
-            Conoce Anzoátegui, Tolima
+            Conoce la Vereda Palomar
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            El corazón del turismo rural comunitario en Anzoátegui, Tolima. 
             Un paraíso natural donde la aventura, la biodiversidad y la tradición campesina 
-            se encuentran para crear experiencias únicas de turismo rural comunitario.
+            se encuentran para crear experiencias únicas.
           </p>
         </div>
 
