@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mountain, MapPin, Phone, Mail, Facebook, Instagram, MessageCircle } from 'lucide-react';
-import { contacto } from '../data/veredaPalomar';
+import { contacto } from '../data/anzoateguiData';
 
 const Footer: React.FC = () => {
   return (

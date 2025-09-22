@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
-import { contacto } from '../data/veredaPalomar';
+import { contacto } from '../data/anzoateguiData';
 
 const ContactoSection: React.FC = () => {
   const [formData, setFormData] = useState({

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Clock, MapPin, TrendingUp, ArrowRight, Filter } from 'lucide-react';
-import { rutas } from '../data/veredaPalomar';
+import { todasLasRutas } from '../data/anzoateguiData';
 
 const RutasSection: React.FC = () => {
   const [selectedType, setSelectedType] = useState<string>('todas');
@@ -24,11 +24,14 @@ const RutasSection: React.FC = () => {
       case 'paisajismo': return '📸';
       case 'aviturismo': return '🦅';
       case 'epifitas': return '🌿';
+      case 'biciturismo': return '🚴‍♂️';
+      case 'caminata': return '🚶‍♂️';
+      case 'aventura': return '🧗‍♂️';
       default: return '🗺️';
     }
   };
 
-  const filteredRutas = rutas.filter(ruta => {
+  const filteredRutas = todasLasRutas.filter(ruta => {
     const typeMatch = selectedType === 'todas' || ruta.tipo === selectedType;
     const difficultyMatch = selectedDifficulty === 'todas' || ruta.dificultad === selectedDifficulty;
     return typeMatch && difficultyMatch;
@@ -39,9 +42,12 @@ const RutasSection: React.FC = () => {
     { value: 'trail-running', label: 'Trail Running' },
     { value: 'trekking', label: 'Trekking' },
     { value: 'kilometro-vertical', label: 'Kilómetro Vertical' },
+    { value: 'biciturismo', label: 'Biciturismo' },
     { value: 'paisajismo', label: 'Paisajismo' },
     { value: 'aviturismo', label: 'Aviturismo' },
-    { value: 'epifitas', label: 'Plantas Epífitas' }
+    { value: 'epifitas', label: 'Plantas Epífitas' },
+    { value: 'caminata', label: 'Caminata' },
+    { value: 'aventura', label: 'Aventura' }
   ];
 
   const difficultyOptions = [

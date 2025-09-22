@@ -1,7 +1,7 @@
 export interface Ruta {
   id: string;
   nombre: string;
-  tipo: 'trail-running' | 'trekking' | 'kilometro-vertical' | 'paisajismo' | 'aviturismo' | 'epifitas';
+  tipo: 'trail-running' | 'trekking' | 'kilometro-vertical' | 'paisajismo' | 'aviturismo' | 'epifitas' | 'biciturismo' | 'caminata' | 'aventura';
   dificultad: 'facil' | 'intermedio' | 'dificil' | 'extremo';
   duracion: string;
   distancia: string;
@@ -16,6 +16,9 @@ export interface Ruta {
     lat: number;
     lng: number;
   };
+  vereda: string;
+  temporada: string[];
+  equipamiento: string[];
 }
 
 export interface Actividad {
@@ -62,6 +65,14 @@ export interface Vereda {
   actividades: Actividad[];
   imagen: string;
   galeria: string[];
+  municipio: string;
+  departamento: string;
+  coordenadas: {
+    lat: number;
+    lng: number;
+  };
+  destacado: boolean;
+  especialidad: string[];
 }
 
 export interface Contacto {

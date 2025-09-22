@@ -3,7 +3,7 @@ import { Vereda, Ruta, Actividad, Atractivo, Contacto, Testimonio } from '../typ
 export const contacto: Contacto = {
   telefono: '+57 300 123 4567',
   email: 'info@anzoateguirutas.com',
-  direccion: 'Vereda Palomar, Anzoátegui, Colombia',
+  direccion: 'Anzoátegui, Tolima, Colombia',
   redesSociales: {
     facebook: 'https://facebook.com/anzoateguirutas',
     instagram: 'https://instagram.com/anzoateguirutas',
@@ -11,7 +11,250 @@ export const contacto: Contacto = {
   }
 };
 
-export const rutas: Ruta[] = [
+// Datos de la Vereda Palomar (destacada)
+export const veredaPalomar: Vereda = {
+  id: 'palomar',
+  nombre: 'Vereda Palomar',
+  descripcion: 'La Vereda Palomar es el corazón del turismo rural comunitario en Anzoátegui. Con una altitud que varía entre 1,800 y 2,800 metros sobre el nivel del mar, esta vereda ofrece una diversidad ecosistémica única que combina bosque nublado, páramo y zonas de transición. Su ubicación estratégica la convierte en un destino ideal para el turismo rural comunitario, ecoturismo y deportes de aventura.',
+  historia: 'La Vereda Palomar fue fundada en 1923 por familias campesinas que llegaron en busca de tierras fértiles para la agricultura. Durante décadas, la comunidad se dedicó principalmente a la producción de café, papa y ganadería. En los últimos años, la comunidad ha diversificado su economía hacia el turismo sostenible, aprovechando sus recursos naturales únicos y su rica biodiversidad.',
+  ubicacion: 'Anzoátegui, Tolima',
+  municipio: 'Anzoátegui',
+  departamento: 'Tolima',
+  clima: 'Templado de montaña, con temperaturas entre 12°C y 22°C',
+  altitud: '1,800 - 2,800 msnm',
+  poblacion: '350 habitantes',
+  principalesActividades: [
+    'Trail Running',
+    'Trekking',
+    'Kilómetro Vertical',
+    'Biciturismo',
+    'Aviturismo',
+    'Observación de Plantas Epífitas',
+    'Fotografía de Naturaleza',
+    'Camping',
+    'Gastronomía Local'
+  ],
+  especialidad: ['Kilómetro Vertical', 'Biciturismo', 'Aviturismo', 'Plantas Epífitas'],
+  destacado: true,
+  coordenadas: {
+    lat: 4.6097,
+    lng: -75.0817
+  },
+  atractivos: [],
+  rutas: [],
+  actividades: [],
+  imagen: '/images/vereda-palomar.jpg',
+  galeria: [
+    '/images/vereda-palomar-1.jpg',
+    '/images/vereda-palomar-2.jpg',
+    '/images/vereda-palomar-3.jpg',
+    '/images/vereda-palomar-4.jpg'
+  ]
+};
+
+// Otras veredas de Anzoátegui
+export const otrasVeredas: Vereda[] = [
+  {
+    id: 'la-esperanza',
+    nombre: 'Vereda La Esperanza',
+    descripcion: 'Vereda tradicional con hermosos paisajes de montaña y cultivos de café. Ideal para caminatas familiares y observación de aves.',
+    historia: 'Fundada en 1915, es una de las veredas más antiguas de Anzoátegui.',
+    ubicacion: 'Anzoátegui, Tolima',
+    municipio: 'Anzoátegui',
+    departamento: 'Tolima',
+    clima: 'Templado, 15°C - 25°C',
+    altitud: '1,200 - 1,800 msnm',
+    poblacion: '280 habitantes',
+    principalesActividades: ['Caminatas', 'Aviturismo', 'Café Turismo'],
+    especialidad: ['Café Turismo', 'Caminatas Familiares'],
+    destacado: false,
+    coordenadas: {
+      lat: 4.6200,
+      lng: -75.0700
+    },
+    atractivos: [],
+    rutas: [],
+    actividades: [],
+    imagen: '/images/vereda-esperanza.jpg',
+    galeria: []
+  },
+  {
+    id: 'el-progreso',
+    nombre: 'Vereda El Progreso',
+    descripcion: 'Vereda con hermosas cascadas y quebradas cristalinas. Perfecta para actividades acuáticas y ecoturismo.',
+    historia: 'Fundada en 1930, conocida por sus recursos hídricos.',
+    ubicacion: 'Anzoátegui, Tolima',
+    municipio: 'Anzoátegui',
+    departamento: 'Tolima',
+    clima: 'Templado, 16°C - 24°C',
+    altitud: '1,000 - 1,600 msnm',
+    poblacion: '220 habitantes',
+    principalesActividades: ['Cascadas', 'Caminatas', 'Fotografía'],
+    especialidad: ['Cascadas', 'Recursos Hídricos'],
+    destacado: false,
+    coordenadas: {
+      lat: 4.6000,
+      lng: -75.0900
+    },
+    atractivos: [],
+    rutas: [],
+    actividades: [],
+    imagen: '/images/vereda-progreso.jpg',
+    galeria: []
+  },
+  {
+    id: 'san-antonio',
+    nombre: 'Vereda San Antonio',
+    descripcion: 'Vereda con tradición ganadera y hermosos paisajes de páramo. Ideal para actividades de montaña.',
+    historia: 'Fundada en 1925, tradicionalmente ganadera.',
+    ubicacion: 'Anzoátegui, Tolima',
+    municipio: 'Anzoátegui',
+    departamento: 'Tolima',
+    clima: 'Frío de montaña, 8°C - 18°C',
+    altitud: '2,200 - 3,000 msnm',
+    poblacion: '180 habitantes',
+    principalesActividades: ['Montañismo', 'Aviturismo', 'Ganadería'],
+    especialidad: ['Montañismo', 'Páramo'],
+    destacado: false,
+    coordenadas: {
+      lat: 4.6300,
+      lng: -75.0600
+    },
+    atractivos: [],
+    rutas: [],
+    actividades: [],
+    imagen: '/images/vereda-san-antonio.jpg',
+    galeria: []
+  }
+];
+
+// Rutas de biciturismo
+export const rutasBiciturismo: Ruta[] = [
+  {
+    id: 'bici-palomar-montana',
+    nombre: 'Ruta Bici Montaña Palomar',
+    tipo: 'biciturismo',
+    dificultad: 'dificil',
+    duracion: '4-6 horas',
+    distancia: '25 km',
+    elevacion: '800m',
+    descripcion: 'Ruta desafiante de biciturismo de montaña que recorre los senderos más técnicos de la Vereda Palomar. Perfecta para ciclistas experimentados que buscan adrenalina y paisajes espectaculares.',
+    caracteristicas: [
+      'Senderos técnicos de montaña',
+      'Subidas empinadas',
+      'Descensos emocionantes',
+      'Vistas panorámicas',
+      'Diversidad de ecosistemas'
+    ],
+    puntosInteres: [
+      'Mirador de los Andes',
+      'Cascada Escondida',
+      'Bosque de Robles',
+      'Pico Palomar'
+    ],
+    recomendaciones: [
+      'Bicicleta de montaña en buen estado',
+      'Casco obligatorio',
+      'Protecciones adicionales recomendadas',
+      'Experiencia previa en montaña',
+      'Guía especializado'
+    ],
+    vereda: 'Palomar',
+    temporada: ['Todo el año'],
+    equipamiento: ['Bicicleta MTB', 'Casco', 'Protecciones', 'Herramientas básicas'],
+    imagen: '/images/bici-palomar.jpg',
+    galeria: [
+      '/images/bici-palomar-1.jpg',
+      '/images/bici-palomar-2.jpg',
+      '/images/bici-palomar-3.jpg'
+    ],
+    coordenadas: {
+      lat: 4.6097,
+      lng: -75.0817
+    }
+  },
+  {
+    id: 'bici-cascadas-esperanza',
+    nombre: 'Ruta Bici Cascadas La Esperanza',
+    tipo: 'biciturismo',
+    dificultad: 'intermedio',
+    duracion: '3-4 horas',
+    distancia: '18 km',
+    elevacion: '400m',
+    descripcion: 'Ruta intermedia de biciturismo que combina senderos de montaña con hermosas cascadas y quebradas. Ideal para ciclistas de nivel intermedio.',
+    caracteristicas: [
+      'Senderos mixtos (asfalto y tierra)',
+      'Cascadas y quebradas',
+      'Pendientes moderadas',
+      'Zonas de descanso',
+      'Paisajes diversos'
+    ],
+    puntosInteres: [
+      'Cascada La Esperanza',
+      'Quebrada Cristalina',
+      'Mirador del Valle',
+      'Bosque de Arrayanes'
+    ],
+    recomendaciones: [
+      'Bicicleta híbrida o MTB',
+      'Casco obligatorio',
+      'Ropa cómoda',
+      'Agua y snacks',
+      'Cámara fotográfica'
+    ],
+    vereda: 'La Esperanza',
+    temporada: ['Marzo - Noviembre'],
+    equipamiento: ['Bicicleta Híbrida/MTB', 'Casco', 'Agua', 'Snacks'],
+    imagen: '/images/bici-esperanza.jpg',
+    galeria: [
+      '/images/bici-esperanza-1.jpg',
+      '/images/bici-esperanza-2.jpg',
+      '/images/bici-esperanza-3.jpg'
+    ]
+  },
+  {
+    id: 'bici-paramo-san-antonio',
+    nombre: 'Ruta Bici Páramo San Antonio',
+    tipo: 'biciturismo',
+    dificultad: 'extremo',
+    duracion: '6-8 horas',
+    distancia: '35 km',
+    elevacion: '1,200m',
+    descripcion: 'La ruta más extrema de biciturismo en Anzoátegui. Recorre el páramo de San Antonio con altitudes superiores a 3,000 metros. Solo para ciclistas expertos.',
+    caracteristicas: [
+      'Altitud extrema (hasta 3,000m)',
+      'Clima frío y cambiante',
+      'Senderos técnicos',
+      'Paisajes de páramo únicos',
+      'Desafío físico máximo'
+    ],
+    puntosInteres: [
+      'Páramo de San Antonio',
+      'Laguna de los Frailejones',
+      'Mirador del Tolima',
+      'Bosque de Pinos'
+    ],
+    recomendaciones: [
+      'Bicicleta de montaña profesional',
+      'Equipo de montaña completo',
+      'Experiencia en altitud',
+      'Guía especializado obligatorio',
+      'Condiciones físicas excelentes'
+    ],
+    vereda: 'San Antonio',
+    temporada: ['Junio - Septiembre'],
+    equipamiento: ['Bicicleta MTB Profesional', 'Equipo de Montaña', 'Oxígeno', 'GPS'],
+    imagen: '/images/bici-paramo.jpg',
+    galeria: [
+      '/images/bici-paramo-1.jpg',
+      '/images/bici-paramo-2.jpg',
+      '/images/bici-paramo-3.jpg'
+    ]
+  }
+];
+
+// Rutas existentes actualizadas con información de vereda
+export const rutasPalomar: Ruta[] = [
   {
     id: 'kilometro-vertical-palomar',
     nombre: 'Kilómetro Vertical Palomar',
@@ -40,6 +283,9 @@ export const rutas: Ruta[] = [
       'Guía certificado recomendado',
       'Condiciones físicas excelentes'
     ],
+    vereda: 'Palomar',
+    temporada: ['Todo el año'],
+    equipamiento: ['Calzado técnico', 'Equipo de montaña', 'GPS', 'Primeros auxilios'],
     imagen: '/images/kilometro-vertical.jpg',
     galeria: [
       '/images/kilometro-vertical-1.jpg',
@@ -79,6 +325,9 @@ export const rutas: Ruta[] = [
       'Ropa técnica',
       'Conocimiento básico de orientación'
     ],
+    vereda: 'Palomar',
+    temporada: ['Todo el año'],
+    equipamiento: ['Zapatos Trail', 'Hidratación', 'Ropa Técnica', 'GPS'],
     imagen: '/images/trail-running.jpg',
     galeria: [
       '/images/trail-running-1.jpg',
@@ -114,6 +363,9 @@ export const rutas: Ruta[] = [
       'Cámara fotográfica',
       'Binoculares para aves'
     ],
+    vereda: 'Palomar',
+    temporada: ['Todo el año'],
+    equipamiento: ['Zapatos Cómodos', 'Agua', 'Snacks', 'Cámara'],
     imagen: '/images/trekking.jpg',
     galeria: [
       '/images/trekking-1.jpg',
@@ -149,6 +401,9 @@ export const rutas: Ruta[] = [
       'Cámara macro',
       'Ropa impermeable'
     ],
+    vereda: 'Palomar',
+    temporada: ['Marzo - Noviembre'],
+    equipamiento: ['Lupa', 'Guía de Plantas', 'Cámara Macro', 'Impermeable'],
     imagen: '/images/epifitas.jpg',
     galeria: [
       '/images/epifitas-1.jpg',
@@ -184,6 +439,9 @@ export const rutas: Ruta[] = [
       'Ropa de colores neutros',
       'Silencio absoluto'
     ],
+    vereda: 'Palomar',
+    temporada: ['Todo el año'],
+    equipamiento: ['Binoculares', 'Guía de Aves', 'Ropa Neutra', 'Silencio'],
     imagen: '/images/aviturismo.jpg',
     galeria: [
       '/images/aviturismo-1.jpg',
@@ -193,6 +451,10 @@ export const rutas: Ruta[] = [
   }
 ];
 
+// Todas las rutas combinadas
+export const todasLasRutas: Ruta[] = [...rutasPalomar, ...rutasBiciturismo];
+
+// Actividades actualizadas
 export const actividades: Actividad[] = [
   {
     id: 'camping-palomar',
@@ -220,6 +482,34 @@ export const actividades: Actividad[] = [
       '/images/camping-1.jpg',
       '/images/camping-2.jpg',
       '/images/camping-3.jpg'
+    ]
+  },
+  {
+    id: 'bici-tour-guiado',
+    nombre: 'Tour Guiado en Bicicleta',
+    tipo: 'deportiva',
+    descripcion: 'Tour guiado en bicicleta por las veredas de Anzoátegui. Incluye alquiler de bicicleta, guía especializado y equipamiento de seguridad.',
+    duracion: '4-6 horas',
+    precio: '$120.000 COP',
+    incluye: [
+      'Alquiler de bicicleta MTB',
+      'Casco y protecciones',
+      'Guía especializado',
+      'Herramientas básicas',
+      'Seguro de viaje'
+    ],
+    requisitos: [
+      'Experiencia básica en bicicleta',
+      'Ropa cómoda',
+      'Documento de identidad',
+      'Condiciones físicas buenas'
+    ],
+    temporada: ['Todo el año'],
+    imagen: '/images/bici-tour.jpg',
+    galeria: [
+      '/images/bici-tour-1.jpg',
+      '/images/bici-tour-2.jpg',
+      '/images/bici-tour-3.jpg'
     ]
   },
   {
@@ -279,6 +569,7 @@ export const actividades: Actividad[] = [
   }
 ];
 
+// Atractivos actualizados
 export const atractivos: Atractivo[] = [
   {
     id: 'mirador-andes',
@@ -343,6 +634,7 @@ export const atractivos: Atractivo[] = [
   }
 ];
 
+// Testimonios actualizados
 export const testimonios: Testimonio[] = [
   {
     id: 'testimonio-1',
@@ -356,8 +648,8 @@ export const testimonios: Testimonio[] = [
   {
     id: 'testimonio-2',
     nombre: 'Carlos Rodríguez',
-    actividad: 'Aviturismo',
-    comentario: 'Como ornitólogo aficionado, quedé impresionado con la diversidad de aves. Pudimos observar 23 especies diferentes en una sola mañana.',
+    actividad: 'Biciturismo',
+    comentario: 'El tour en bicicleta por las veredas de Anzoátegui fue espectacular. Los senderos técnicos y los paisajes son únicos. Definitivamente regresaré.',
     calificacion: 5,
     fecha: '2024-09-02',
     imagen: '/images/testimonio-2.jpg'
@@ -373,33 +665,19 @@ export const testimonios: Testimonio[] = [
   }
 ];
 
-export const veredaPalomar: Vereda = {
-  id: 'palomar',
-  nombre: 'Vereda Palomar',
-  descripcion: 'La Vereda Palomar es un paraíso natural ubicado en el corazón de Anzoátegui, Colombia. Con una altitud que varía entre 1,800 y 2,800 metros sobre el nivel del mar, esta vereda ofrece una diversidad ecosistémica única que combina bosque nublado, páramo y zonas de transición. Su ubicación estratégica la convierte en un destino ideal para el turismo rural comunitario, ecoturismo y deportes de aventura.',
-  historia: 'La Vereda Palomar fue fundada en 1923 por familias campesinas que llegaron en busca de tierras fértiles para la agricultura. Durante décadas, la comunidad se dedicó principalmente a la producción de café, papa y ganadería. En los últimos años, la comunidad ha diversificado su economía hacia el turismo sostenible, aprovechando sus recursos naturales únicos y su rica biodiversidad.',
-  ubicacion: 'Anzoátegui, Colombia',
-  clima: 'Templado de montaña, con temperaturas entre 12°C y 22°C',
-  altitud: '1,800 - 2,800 msnm',
-  poblacion: '350 habitantes',
-  principalesActividades: [
-    'Trail Running',
-    'Trekking',
-    'Kilómetro Vertical',
-    'Aviturismo',
-    'Observación de Plantas Epífitas',
-    'Fotografía de Naturaleza',
-    'Camping',
-    'Gastronomía Local'
-  ],
-  atractivos: atractivos,
-  rutas: rutas,
+// Información general de Anzoátegui
+export const infoAnzoategui = {
+  nombre: 'Anzoátegui',
+  departamento: 'Tolima',
+  descripcion: 'Anzoátegui es un municipio del departamento de Tolima, Colombia, conocido por su rica biodiversidad, hermosos paisajes de montaña y su potencial para el turismo rural comunitario. Con múltiples veredas que ofrecen experiencias únicas de ecoturismo, deportes de aventura y turismo cultural.',
+  ubicacion: 'Tolima, Colombia',
+  coordenadas: {
+    lat: 4.6000,
+    lng: -75.0800
+  },
+  veredas: [veredaPalomar, ...otrasVeredas],
+  rutas: todasLasRutas,
   actividades: actividades,
-  imagen: '/images/vereda-palomar.jpg',
-  galeria: [
-    '/images/vereda-palomar-1.jpg',
-    '/images/vereda-palomar-2.jpg',
-    '/images/vereda-palomar-3.jpg',
-    '/images/vereda-palomar-4.jpg'
-  ]
+  atractivos: atractivos,
+  testimonios: testimonios
 };

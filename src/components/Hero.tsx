@@ -21,11 +21,15 @@ const Hero: React.FC = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 text-center text-white">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 font-serif">
-            Vereda Palomar
+            Anzoátegui Rutas
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-            Descubre la magia del turismo rural comunitario en el corazón de Anzoátegui. 
+          <p className="text-xl md:text-2xl mb-4 max-w-3xl mx-auto leading-relaxed">
+            Descubre la magia del turismo rural comunitario en Anzoátegui, Tolima. 
             Aventura, naturaleza y tradición se unen en un destino único.
+          </p>
+          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed opacity-90">
+            Desde la Vereda Palomar hasta las cascadas de El Progreso, 
+            explora nuestras veredas a través de trail running, biciturismo y ecoturismo.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -49,15 +53,15 @@ const Hero: React.FC = () => {
               <div className="flex justify-center mb-2">
                 <Mountain className="w-8 h-8 text-accent-400" />
               </div>
-              <div className="text-3xl font-bold text-accent-400">5</div>
+              <div className="text-3xl font-bold text-accent-400">8</div>
               <div className="text-sm opacity-90">Rutas Únicas</div>
             </div>
             <div className="text-center">
               <div className="flex justify-center mb-2">
                 <MapPin className="w-8 h-8 text-accent-400" />
               </div>
-              <div className="text-3xl font-bold text-accent-400">2.8km</div>
-              <div className="text-sm opacity-90">Altitud Máxima</div>
+              <div className="text-3xl font-bold text-accent-400">4</div>
+              <div className="text-sm opacity-90">Veredas</div>
             </div>
             <div className="text-center">
               <div className="flex justify-center mb-2">

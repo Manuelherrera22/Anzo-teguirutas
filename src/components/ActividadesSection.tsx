@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Clock, DollarSign, Calendar, ArrowRight, Filter } from 'lucide-react';
-import { actividades } from '../data/veredaPalomar';
+import { actividades } from '../data/anzoateguiData';
 
 const ActividadesSection: React.FC = () => {
   const [selectedType, setSelectedType] = useState<string>('todas');

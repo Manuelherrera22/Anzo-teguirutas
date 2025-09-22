@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, Thermometer, Users, Mountain, Leaf, Camera } from 'lucide-react';
-import { veredaPalomar } from '../data/veredaPalomar';
+import { infoAnzoategui } from '../data/anzoateguiData';
 
 const VeredaSection: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const VeredaSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-serif">
-            Conoce la Vereda Palomar
+            Conoce Anzoátegui, Tolima
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Un paraíso natural donde la aventura, la biodiversidad y la tradición campesina 
@@ -21,10 +21,10 @@ const VeredaSection: React.FC = () => {
           <div className="animate-slide-in-left">
             <h3 className="text-3xl font-bold text-gray-900 mb-6">Nuestra Historia</h3>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              {veredaPalomar.historia}
+              {infoAnzoategui.veredas[0].historia}
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              {veredaPalomar.descripcion}
+              {infoAnzoategui.veredas[0].descripcion}
             </p>
           </div>
 
@@ -46,7 +46,7 @@ const VeredaSection: React.FC = () => {
               <MapPin className="w-8 h-8 text-primary-600 mr-3" />
               <h4 className="text-lg font-semibold text-gray-900">Ubicación</h4>
             </div>
-            <p className="text-gray-600">{veredaPalomar.ubicacion}</p>
+            <p className="text-gray-600">{infoAnzoategui.veredas[0].ubicacion}</p>
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
@@ -54,7 +54,7 @@ const VeredaSection: React.FC = () => {
               <Thermometer className="w-8 h-8 text-secondary-600 mr-3" />
               <h4 className="text-lg font-semibold text-gray-900">Clima</h4>
             </div>
-            <p className="text-gray-600">{veredaPalomar.clima}</p>
+            <p className="text-gray-600">{infoAnzoategui.veredas[0].clima}</p>
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
@@ -62,7 +62,7 @@ const VeredaSection: React.FC = () => {
               <Mountain className="w-8 h-8 text-accent-600 mr-3" />
               <h4 className="text-lg font-semibold text-gray-900">Altitud</h4>
             </div>
-            <p className="text-gray-600">{veredaPalomar.altitud}</p>
+            <p className="text-gray-600">{infoAnzoategui.veredas[0].altitud}</p>
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
@@ -70,7 +70,7 @@ const VeredaSection: React.FC = () => {
               <Users className="w-8 h-8 text-primary-600 mr-3" />
               <h4 className="text-lg font-semibold text-gray-900">Población</h4>
             </div>
-            <p className="text-gray-600">{veredaPalomar.poblacion}</p>
+            <p className="text-gray-600">{infoAnzoategui.veredas[0].poblacion}</p>
           </div>
         </div>
 
@@ -78,7 +78,7 @@ const VeredaSection: React.FC = () => {
         <div className="bg-white rounded-2xl p-8 shadow-lg">
           <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Actividades Principales</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {veredaPalomar.principalesActividades.map((actividad, index) => (
+            {infoAnzoategui.veredas[0].principalesActividades.map((actividad, index) => (
               <div key={index} className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-primary-50 transition-colors">
                 <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
                   {actividad.includes('Trail') && <Mountain className="w-6 h-6 text-primary-600" />}

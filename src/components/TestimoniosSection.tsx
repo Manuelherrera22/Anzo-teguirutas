@@ -1,6 +1,6 @@
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
-import { testimonios } from '../data/veredaPalomar';
+import { testimonios } from '../data/anzoateguiData';
 
 const TestimoniosSection: React.FC = () => {
   return (

@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import VeredaSection from '../components/VeredaSection';
+import VeredasSection from '../components/VeredasSection';
 import RutasSection from '../components/RutasSection';
 import ActividadesSection from '../components/ActividadesSection';
 import TestimoniosSection from '../components/TestimoniosSection';
@@ -11,6 +12,7 @@ const Home: React.FC = () => {
     <div className="min-h-screen">
       <Hero />
       <VeredaSection />
+      <VeredasSection />
       <RutasSection />
       <ActividadesSection />
       <TestimoniosSection />
