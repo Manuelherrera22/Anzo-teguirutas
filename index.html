@@ -27,5 +27,11 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Fallback para navegadores que no soportan modules
+      if (!('noModule' in HTMLScriptElement.prototype)) {
+        console.log('Module scripts not supported');
+      }
+    </script>
   </body>
 </html>
